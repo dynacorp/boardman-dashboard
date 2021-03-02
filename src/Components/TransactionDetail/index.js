@@ -3,6 +3,7 @@ import LayoutNav from "../Reusable/LayoutNav";
 import LayoutHeader from "../Reusable/LayoutHeader";
 import Detail from "./Detail";
 import PaymentBreakdown from "./PaymentBreakdown";
+import History from "../Transaction/History";
 
 const TransactionDetail = (props) => {
 	useEffect(() => {
@@ -18,7 +19,7 @@ const TransactionDetail = (props) => {
 				<div className="layout__content">
 					<LayoutHeader />
 					<Detail />
-					<PaymentBreakdown />
+					<History />
 				</div>
 			</div>
 		</div>

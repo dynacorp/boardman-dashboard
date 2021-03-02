@@ -1,24 +1,25 @@
+@import '~antd/dist/antd.css';
 body {
   font-family: "Manrope", sans-serif;
-  background: #f7fafc;
+  background: #f7fafc !important;
   color: #000;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .bg-dark-gray {
-  background: #a0aec0;
+  background: #a0aec0 !important;
 }
 
 .bg-gray {
-  background: #828282;
+  background: #828282 !important;
 }
 
 .bg-deep-gray {
-  background: #425466;
+  background: #425466 !important;
 }
 
 .bg-dark-blue {
-  background: #01436b;
+  background: #01436b !important;
 }
 
 .text-dark-gray {
@@ -123,12 +124,17 @@ body {
 
 .layout__content-header .notification-badge {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
   right: -5px;
-  top: -5px;
-  line-height: 25px;
+  top: 0px;
+  line-height: 15px;
   text-align: center;
+  font-size: 11px;
+}
+
+.btn {
+  border-radius: 10px !important;
 }
 
 /********************************
@@ -168,6 +174,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
 }
 
 .dashboard__main-cards .car_d img {
@@ -343,51 +350,68 @@ body {
   }
 }
 
-/********************************
-
-        BULK PAYMENT
-
-********************************/
-.bulk__payment-main {
-  padding: 10px;
+.tableStatus {
+  font-size: 13px;
+  border-radius: 50px !important;
+  padding: 2px;
 }
 
-@media screen and (min-width: 768px) {
-  .bulk__payment-main {
-    padding: 20px;
-  }
+.f19 {
+  font-size: 19px!important;
 }
 
-.bulk__payment-main .profile-details {
-  padding: 30px 10px;
+.f14 {
+  font-size: 14px!important;
 }
 
-@media screen and (min-width: 768px) {
-  .bulk__payment-main .profile-details {
-    padding: 30px;
-  }
+.f15 {
+  font-size: 15px!important;
 }
 
-.bulk__payment-main .profile-details .bulk-img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
+.green {
+  background-color: #219653 !important
 }
 
-.bulk__payment-main .profile-details.min-ht {
-  min-height: 500px;
+.buttonColor {
+  background-color: #425466;
 }
 
-.bulk__payment-main .profile-details .sync {
-  border-radius: 20px;
-  border-color: #fff;
+.navButton {
+  font-weight: bold;
+  margin-right: 7px !important;
 }
 
-.bulk__payment-main .profile-details .processed {
-  width: 60px;
-  height: 60px;
+.mr40 {
+  margin-right: 40px !important;
 }
 
-.bulk__payment-main .profile-details.process_ed p {
-  font-size: 20px;
+.m0 {
+  margin: 0 !important;
+}
+
+.hpad14 {
+  padding: 14px 0;
+}
+
+.ant-picker-large {
+  padding: 11px !important;
+}
+
+.ant-picker-range {
+  height: 100% !important;
+  border-radius: 10px !important;
+}
+
+.ant-input-affix-wrapper {
+  border-radius: 10px !important;
+}
+
+.ant-select-lg  .ant-select-selector {
+  height: auto !important;
+  padding: 4px 11px !important;
+  border-radius: 10px !important;
+}
+
+.fw600 {
+  font-weight: 500;
 }

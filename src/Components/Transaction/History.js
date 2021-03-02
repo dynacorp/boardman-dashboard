@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { SearchOutlined, ArrowRightOutlined } from "@ant-design/icons";
-import Select from "react-select";
+import { SearchOutlined } from "@ant-design/icons";
+import { Input } from 'antd';
+import { DatePicker } from 'antd';
+import { Select } from 'antd';
+
+const { Option } = Select;
+
+const { RangePicker } = DatePicker;
 
 const options = [
 	{ value: "All Channels", label: "All Channels" },
@@ -22,41 +28,36 @@ const History = () => {
 		console.log(anotherOption);
 	}, [selectedOption, anotherOption]);
 
+	function handleChange(value) {
+		console.log(`selected ${value}`);
+	  }
+
 	return (
 		<div className="dashboard__payment">
 			<h2 className="font-weight-bold mt-md-5 mb-4">Transaction History</h2>
 			<div className="bg-white py-5 px-2 px-md-4">
 				<div className="bg-white border-bottom pb-0">
-					<h5 className="d-inline-block text-gray bb-payment pb-2 mb-2 mb-md-0">All Bulk Payments</h5>
-					<h5 className="d-inline-block text-gray pb-2 mb-2 mb-md-0 mx-3 mx-md-5">Successful</h5>
-					<h5 className="d-inline-block text-gray pb-2 mb-2 mb-md-0">Failed</h5>
+					<h5 className="d-inline-block text-gray bb-payment pb-2 mb-2 mb-md-0 f15">All Bulk Payments</h5>
+					<h5 className="d-inline-block text-gray pb-2 mb-2 mb-md-0 mx-3 mx-md-5 f15">Successful</h5>
+					<h5 className="d-inline-block text-gray pb-2 mb-2 mb-md-0 f15">Failed</h5>
 				</div>
 				<div className="search d-flex my-4 flex-wrap overflow-scroll-x">
 					<div className="input-group input-group-search mb-3 mb-lg-0">
-						<div className="input-group-append">
-							<button className="btn btn-outline-secondary" type="button">
-								<SearchOutlined />
-							</button>
-						</div>
-						<input
-							type="text"
-							className="form-control layout__header-search"
-							placeholder="Recipient's username"
-							aria-label="Recipient's username"
-							aria-describedby="basic-addon2"
-							defaultValue="Username"
-						/>
+						<Input size="30px" placeholder="Search transaction ID, Full name…" prefix={<SearchOutlined />} />
 					</div>
 					<div className="mb-md-0 mx-3 d-flex align-items-center flex-nowrap">
-						<input type="date" defaultValue="2020-01-01" />
-						<ArrowRightOutlined />
-						<input type="date" defaultValue="2020-01-01" />
+					<RangePicker size={'large'} />
 					</div>
 					<div className="d-flex flex-nowrap mx-3">
-						<label htmlFor="Filter by">Filter by:</label>
-						<Select className="max-w-search h-100" options={options} onChange={(e) => setSelectedOption(e.value)} />
+						<label style={{'margin': 'auto'}} htmlFor="Filter by">Filter by:</label>
+						<Select className="max-w-search h-100" size='large'  defaultValue="All Channels" style={{ width: 150, marginLeft: 15 }} onChange={handleChange}>
+							<Option value="disabled" disabled>
+								Disabled
+							</Option>
+							<Option value="Yiminghe">yiminghe</Option>
+						</Select>
 					</div>
-					<Select className="max-w-search h-100" options={exportOptions} onChange={(e) => setAnotherOption(e.value)} />
+					<Select className="max-w-search h-100" size='large' options={exportOptions} onChange={(e) => setAnotherOption(e.value)} />
 				</div>
 
 				<div className="table-responsive w-100">
