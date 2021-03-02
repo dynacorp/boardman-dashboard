@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.less';
 $dark-gray: #a0aec0;
 $gray: #828282;
 $deep-gray: #425466;
@@ -8,7 +9,7 @@ body {
 	font-family: "Manrope", sans-serif;
 	background: #f7fafc;
 	color: #000;
-	line-height: 30px;
+	line-height: 35px;
 }
 
 .bg-dark-gray {
@@ -341,53 +342,4 @@ body {
 	@media screen and (min-width: 768px) {
 		padding: 20px;
 	}
-}
-
-/********************************
-
-        BULK PAYMENT
-
-********************************/
-.bulk__payment {
-    &-main {
-        padding: 10px;
-
-		@media screen and (min-width: 768px) {
-			padding: 20px;
-		}   
-
-        .profile-details {
-			padding: 30px 10px;
-
-			@media screen and (min-width: 768px) {
-				padding: 30px;
-			}
-
-			.bulk-img {
-				width: 60px;
-				height: 60px;
-				object-fit: cover;
-			}
-
-			&.min-ht {
-                min-height: 500px;
-            }
-
-            .sync {
-                border-radius: 20px;
-                border-color: #fff;
-            }
-
-            .processed {
-                width: 60px;
-                height: 60px;
-            }
-
-            &.process_ed {
-                p {
-                    font-size: 20px;
-                }
-            }
-		}
-    }
 }
