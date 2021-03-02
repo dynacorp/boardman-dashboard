@@ -61,7 +61,7 @@ const Detail = () => {
 				<div>
 					<div className="d-flex justify-content-between">
 						<div>
-							<h5 className="text-gray heading font-weight-bold mb-3">Bank detail</h5>
+							<h5 className="text-gray heading font-weight-bold mb-3">Notes</h5>
 							<h4>Unilever_Vender Payment 1</h4>
 						</div>
 						<div className="text-right">

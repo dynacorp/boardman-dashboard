@@ -1,6 +1,8 @@
 @import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
 body {
   font-family: "Manrope", sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Manrope');
   background: #f7fafc !important;
   color: #000;
   line-height: 35px;
@@ -415,3 +417,73 @@ body {
 .fw600 {
   font-weight: 500;
 }
+
+/********************************
+        BULK PAYMENT
+********************************/
+.bulk__payment-main {
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .bulk__payment-main {
+    padding: 20px;
+  }
+}
+
+.bulk__payment-main .profile-details {
+  padding: 30px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .bulk__payment-main .profile-details {
+    padding: 30px;
+  }
+}
+
+.bulk__payment-main .profile-details .bulk-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.bulk__payment-main .profile-details.min-ht {
+  min-height: 500px;
+}
+
+.bulk__payment-main .profile-details .sync {
+  border-radius: 20px;
+  border-color: #fff;
+}
+
+.bulk__payment-main .profile-details .processed {
+  width: 60px;
+  height: 60px;
+}
+
+.bulk__payment-main .profile-details.process_ed p {
+  font-size: 20px;
+}
+
+.bulk__payment-main .paymentBorder {
+  background: rgb(247, 250, 252);
+  border-radius: 10px;
+  border: 1px solid #B1C7CF;
+}
+
+.bulk__payment-main .paymentBorder p {
+  line-height: initial;
+  font-weight: 100;
+}
+
+.bulk__payment-main .paymentBorder .btn {
+  padding: 7px 20px !important;
+  font-size: 14px;
+}
+
+.bulk__payment-main .paymentBorder .bg-colored {
+  background-color: #F0FBFF !important;
+  border: 1px solid #1D90B9 !important;
+}
+
+

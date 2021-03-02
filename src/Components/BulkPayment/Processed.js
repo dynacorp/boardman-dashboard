@@ -46,10 +46,10 @@ const Processed = () => {
 					<p>143,209</p>
 				</div>
 			</div>
-			<button className="bg-success px-4 py-2 rounded btn text-light mr-3 mb-3 mb-md-0">
+			<button className="green px-4 py-2 rounded btn text-light mr-3 mb-3 mb-md-0">
 				<span className="font-weight-bold">Next:</span> <span>Start Disbursement</span>
 			</button>
-			<button className="bg-secondary px-4 py-2 rounded btn text-light">
+			<button className="buttonColor px-4 py-2 rounded btn text-light">
 				<span className="font-weight-bold">Next:</span> <span>Review</span>
 			</button>
 		</div>

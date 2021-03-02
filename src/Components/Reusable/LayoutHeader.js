@@ -26,7 +26,7 @@ const LayoutHeader = () => {
                     <span className="notification-badge rounded-circle d-inline-block bg-danger text-light">3</span>
 					<BellOutlined style={{ fontSize: '21px', color: '#8F92A1' }} />
 				</div>
-				<Link className="btn btn-success green f14" to="/">
+				<Link className="btn btn-success green f14" to="/create-payment">
 					<span className="navButton">+</span>
 					Create bulk payment
 				</Link>
